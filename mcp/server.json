@@ -1,0 +1,46 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.say1j/tronenergyfrog",
+  "title": "TronEnergyFrog",
+  "description": "Live TRON Energy prices and rental for USDT TRC-20 transfers, paid by x402 USDC or API key.",
+  "repository": {
+    "url": "https://github.com/say1j/tron-energy-rental",
+    "source": "github",
+    "subfolder": "mcp"
+  },
+  "websiteUrl": "https://tronenergyfrog.com/x402",
+  "version": "0.1.0",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "tronenergyfrog-mcp",
+      "version": "0.1.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "TRONENERGYFROG_API_KEY",
+          "description": "Optional account API key from @tron_energy_frog_bot. Enables balance, fee check and rent_energy.",
+          "isRequired": false,
+          "isSecret": true,
+          "format": "string"
+        },
+        {
+          "name": "TRONENERGYFROG_EVM_PRIVATE_KEY",
+          "description": "Optional Base wallet key that pays x402 quotes in USDC. Use a dedicated low-balance wallet.",
+          "isRequired": false,
+          "isSecret": true,
+          "format": "string"
+        },
+        {
+          "name": "TRONENERGYFROG_MAX_PAYMENT_USD",
+          "description": "Per-payment USDC cap for pay_x402_quote. Default 5.",
+          "isRequired": false,
+          "isSecret": false,
+          "format": "string"
+        }
+      ]
+    }
+  ]
+}

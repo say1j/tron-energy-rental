@@ -1,0 +1,65 @@
+{
+  "name": "tronenergyfrog-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for TronEnergyFrog: live TRON Energy prices, USDT TRC-20 fee checks and Energy rental for AI agents, by API key or x402 USDC with no account.",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "tron",
+    "trx",
+    "tron-energy",
+    "energy-rental",
+    "usdt",
+    "trc20",
+    "x402",
+    "ai-agents"
+  ],
+  "homepage": "https://tronenergyfrog.com/x402",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/say1j/tron-energy-rental.git",
+    "directory": "mcp"
+  },
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "tronenergyfrog-mcp": "dist/cli.js"
+  },
+  "files": [
+    "dist/*.js",
+    "dist/*.d.ts",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "tsx --test test/*.test.ts",
+    "start": "node dist/index.js",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "mcpName": "io.github.say1j/tronenergyfrog",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "@x402/evm": "~2.31.0",
+    "@x402/fetch": "~2.31.0",
+    "viem": "^2.58.1",
+    "zod": "^4.6.7"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "tsx": "^4.23.0",
+    "typescript": "^5.9.3"
+  }
+}

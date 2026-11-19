@@ -66,6 +66,8 @@ Start with our **[API overview for developers](DEVELOPERS.md)** for authenticati
 
 **x402 API:** discover available payment options, create a quote, answer the HTTP 402 payment challenge, and follow the rental status. AI agents pay in USDC on Base (preferred) or Solana; Energy is delivered on TRON. The returned challenge supplies the exact payment details. [Integration guide →](https://tronenergyfrog.com/x402) · [Discovery JSON →](https://api.tronenergyfrog.com/v1/x402)
 
+**MCP server for AI agents:** give Claude, Cursor or any MCP client live TRON Energy prices, x402 quotes and Energy rental. Run `npx -y tronenergyfrog-mcp`; an API key or a Base wallet is optional. [Setup and tools →](mcp/README.md)
+
 ---
 
 **[Open TronEnergyFrog](https://tronenergyfrog.com/)** · [Guides](https://tronenergyfrog.com/guides) · [YouTube](https://www.youtube.com/@TronEnergyFrog) · [Support](mailto:support@tronenergyfrog.com) · [Terms & privacy](https://tronenergyfrog.com/terms)
