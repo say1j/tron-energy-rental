@@ -6,6 +6,8 @@
 
 [Rent Energy](https://tronenergyfrog.com/) · [Telegram Bot](https://t.me/tron_energy_frog_bot) · [Live calculator](https://tronenergyfrog.com/tron-energy-calculator) · [API overview](DEVELOPERS.md) · [x402 for AI](https://tronenergyfrog.com/x402)
 
+[![say1j/tron-energy-rental MCP server](https://glama.ai/mcp/servers/say1j/tron-energy-rental/badges/score.svg)](https://glama.ai/mcp/servers/say1j/tron-energy-rental)
+
 TronEnergyFrog is a TRON Energy rental service for USDT TRC-20 transfers. Check the amount, compare the price, and get Energy delegated to your sending wallet for the rental period. Your private keys stay in your wallet.
 
 Savings vary with the quote and network costs. The 80% comparison applies to Energy, with Bandwidth and separate activation costs excluded.
